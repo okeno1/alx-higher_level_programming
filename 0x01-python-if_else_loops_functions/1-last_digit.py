@@ -18,26 +18,24 @@ else:
 
 
 
-            lastDigit = number % 10
+    lastDigit = number % 10
 
-            if RandomNum < 0:
+    if RandomNum < 0:
 
-                number = RandomNum
+        number = RandomNum
 
-                        lastDigit = -(lastDigit)
+        lastDigit = -(lastDigit)
 
+        if lastDigit > 5:
 
+            string = "and is greater than 5"
 
-                        if lastDigit > 5:
+        elif lastDigit == 0:
 
-                            string = "and is greater than 5"
+            string = "and is 0"
 
-                        elif lastDigit == 0:
+        elif lastDigit < 6:
 
-                            string = "and is 0"
+            string = "and is less than 6 and not 0"
 
-                        elif lastDigit < 6:
-
-                            string = "and is less than 6 and not 0"
-
-                        print(f"Last digit of {number} is {lastDigit}", string)
+        print(f"Last digit of {number} is {lastDigit}", string)
