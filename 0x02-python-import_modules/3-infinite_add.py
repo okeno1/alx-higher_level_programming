@@ -11,5 +11,5 @@ if __name__ == "__main__":
         totalsum = 0
         for i in range(1, len(sys.argv)):
             totalsum += int(sys.argv[i])
-            print("{:d}".format(totalsum), end="")
-            print('')
+        print("{:d}".format(totalsum), end="")
+        print('')
